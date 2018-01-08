@@ -1,10 +1,12 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 
 const App = () => {
   return (
-    <div className='app'>
-      <h1>owo what's this</h1>
-    </div>
+    <Fragment>
+      <h1>react</h1>
+      <h1>is</h1>
+      <h1>cool</h1>
+    </Fragment>
   )
 }
 
