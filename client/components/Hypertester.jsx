@@ -6,7 +6,8 @@ const App = () => {
     h(Fragment, [
       'is this where the text goes',
       h('p', 'what if I wanted a child element'),
-      h('p', 'what if I wanted a second child element')
+      h('p', 'what if I wanted a second child element'),
+      h('button', {'className': 'button is-large is-success'}, 'hi im a button')
     ])
   )
 }
