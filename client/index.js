@@ -1,11 +1,14 @@
 import React from 'react'
+import { HashRouter as Router } from 'react-router-dom'
 import ReactDOM from 'react-dom'
 
-import App from './components/App'
+import Container from './components/Container'
 
 document.addEventListener('DOMContentLoaded', () => {
   ReactDOM.render(
-    <App />,
+    <Router >
+      <Container />
+    </Router >,
     document.getElementById('app')
   )
 })

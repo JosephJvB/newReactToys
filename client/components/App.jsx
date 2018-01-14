@@ -1,5 +1,6 @@
 import { Fragment } from 'react'
 import h from 'react-hyperscript'
+import { Link } from 'react-router-dom'
 
 import Hypertester from './Hypertester'
 
@@ -12,7 +13,9 @@ const App = () => {
       h('h1', { 'className': 'title is-4' }, 'is cool'),
       h(Hypertester, {'str': str}),
       h(yaCompLookin),
-      h(Hypertester, {'str': 'Ash catches pokemon and wants to be the best'})
+      h(Link, {'to': '/linked'},
+        h('button', 'link me baby one more time')
+      )
     ])
   )
 }
